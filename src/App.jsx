@@ -6,7 +6,8 @@ const App = () => {
   const [qrSize, setQrSize] = useState("150");
   const [inverted, setInverted] = useState(false);
 
-  const defaultImg = "/image/qrcode.png";
+  const defaultImg = `${import.meta.env.BASE_URL}image/sample.png`;
+  //const defaultImg = "/Qrcode-React/image/sample.png";
 
   function downloadQr() {
     if (!img) return;

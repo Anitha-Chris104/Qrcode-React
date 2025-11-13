@@ -15,9 +15,26 @@ what's new
 -----------------------------------------------------------------------------------------------------------------------
 Important
 -------------
-QR code -url
-1.https://api.qrserver.com/v1/create-qr-code/?size=150%C3%97150&data=anitha        
+1.QR code -url
+  https://api.qrserver.com/v1/create-qr-code/?size=150%C3%97150&data=anitha        
   for multiplication--ALT + 0215
+
+2.push project into github
+  deploy app in github pages
+  =>npm install gh-pages
+  create new repo
+  =>cd project
+  =>git init
+  =>git add.  
+  =>git commit -m "Initial commit - QR generator app"
+  =>git branch -M main
+  =>git remote add origin https://github.com/Anitha-Chris104/Qrcode-React.git
+  =>git push -u origin main
+  make live on github pages
+  in package.json-->"predeploy":"npm run build" , "deploy":"gh pages -d dist"
+  in vite.config-->base:'/Qrcode-React/',
+  =>npm run deploy
+
 
 
 
@@ -36,3 +53,4 @@ Errors
           width={qrSize}
           height={qrSize}
         />
+   ==>i didn't give --> width={qrSize} , height={qrSize}    

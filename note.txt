@@ -1,0 +1,38 @@
+what's new
+------------------------
+1.. width: min(90vw, 90vh);
+    height: min(90vw, 90vh);
+    ==>Make the container square, and size it to 90% of the smaller screen dimension & responsive.
+    
+2.another way to center container
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%); 
+
+3.botton disable using state     
+
+-----------------------------------------------------------------------------------------------------------------------
+Important
+-------------
+QR code -url
+1.https://api.qrserver.com/v1/create-qr-code/?size=150%C3%97150&data=anitha        
+  for multiplication--ALT + 0215
+
+
+
+-----------------------------------------------------------------------------------------------------------------------
+Errors
+---------------
+1.Default image not loaded at first before user give text/url
+  const defaultImg = "/image/qrcode.png"; // instead
+  ==>i put --> "/image/qrcode(2).png"
+                "image/qrcode(2).png"
+
+2.my qr-code is not resized based on user inputs
+   <img
+          src={img || defaultImg}
+          alt="QR Code"
+          width={qrSize}
+          height={qrSize}
+        />

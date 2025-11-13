@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Oxanium:wght@200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", "Poppins", sans-serif;
+}
+body {
+  background: #630f96;
+  background: radial-gradient(circle, rgb(28, 1, 42) 30%, rgb(37, 1, 59) 70%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app-container {
+  width: min(90vw, 90vh);
+  height: min(70vw, 70vh);
+
+  border: 2px solid white;
+  max-width: 700px;
+  max-height: 700px;
+  border: white solid 2px;
+  border-radius: 35px;
+  background: rgb(37, 1, 59);
+  display: flex;
+}
+.qr {
+  margin: auto;
+
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.qr h5 {
+  font-family: "Oxanium", cursive;
+  color: white;
+  letter-spacing: 0.2rem;
+}
+
+.qr button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ffffff;
+  color: #630f96;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.qr button:hover {
+  background-color: #bbb7b7;
+  color: #3e0a6d;
+}
+.qr p {
+  color: #ffffff;
+}
+.side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.side h4 {
+  color: white;
+
+  font-family: "Oxanium", cursive;
+  letter-spacing: 0.2rem;
+  font-size: 1.4rem;
+}
+.side .lasttext {
+  font-size: 0.7rem;
+  font-family: "Oxanium", cursive;
+  letter-spacing: 0.2rem;
+}
+.txt {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.side span {
+  color: white;
+  font-size: 1.8rem;
+  font-family: "Oxanium", cursive;
+  letter-spacing: 0.2rem;
+}
+.fields {
+  display: flex;
+  flex-direction: column;
+}
+.fields label {
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+.fields input {
+  padding: 10px 40px;
+  width: 100%;
+  max-width: 300px;
+  color: #6d3e6d;
+  border-radius: 19px;
+  background-color: #30034b;
+  font-size: 16px;
+  border: none;
+  margin-bottom: 25px;
+}
+.fields input::placeholder {
+  color: #6d3e6d; /* light gray, or any color you prefer */
+  /* optional: ensures full visibility */
+}
+.side button {
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #630f96;
+  color: #ffffff;
+  font-weight: 600;
+}
+.generate-btn:disabled {
+  background-color: #575757;
+  cursor: not-allowed;
+}
